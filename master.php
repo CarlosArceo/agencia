@@ -36,8 +36,8 @@
       <li><div class="divider"></div></li>
       
       <li><a class="subheader">Administración</a></li>
-      <li><a href="view/sucursales.html"><i class="material-icons pink-item">store</i>Sucursales</a></li>
-      <li><a href="comments.html"><i class="material-icons pink-item">person</i>Usuarios</a></li>
+      <li><a href="?open=sucursales"><i class="material-icons pink-item">store</i>Sucursales</a></li>
+      <li><a href="?open=usuarios"><i class="material-icons pink-item">person</i>Usuarios</a></li>
       
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -69,66 +69,9 @@
       </li>
     </ul>
     <main>
-    <section class="content">
-      
-      <div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i class="material-icons">menu</i></a><h1 class="page-announce-text valign">// Name Approvals </h1></div>
-      <div id="posttable" class="container">
-        <table class="responsive-table striped hover centered" id="names-table">
-          <thead>
-            <tr>
-              <th>Username:</th>
-              <th>Date Requested:</th>
-              <th>Toon ID:</th>
-              <th>Name Requested:</th>
-              <th>Name Actions:</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a>MeredithPalmer</a></td>
-              <td><a>2017-03-30</a></td>
-              <td><a>1000016</a></td>
-              <td><a>Ticking Time Bags</a></td>
-              <td>
-                <div class="btn-toolbar">
-                  <a href="#">
-                    <button class="btn green" type="submit">
-                    <i class="material-icons">done</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="btn red" type="submit">
-                    <i class="material-icons">remove</i>
-                    </button>
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><a>OscarMartinez</a></td>
-              <td><a>2017-03-30</a></td>
-              <td><a>1000017</a></td>
-              <td><a>Aggregious</a></td>
-              <td>
-                <div class="btn-toolbar">
-                  <a href="#">
-                    <button class="btn green" type="submit">
-                    <i class="material-icons">done</i>
-                    </button>
-                  </a>
-                  <a href="#">
-                    <button class="btn red" type="submit">
-                    <i class="material-icons">remove</i>
-                    </button>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+    <section class="content">      
+      <?php include "file.php" ?>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="footer-copyright">
@@ -158,7 +101,7 @@
     $('select').material_select();
     $('.collapsible').collapsible();
     </script>
-    <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50" data-tooltip="Quick Links">
+    <!-- <div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50" data-tooltip="Quick Links">
       <a class="btn-floating btn-large red">
         <i class="large material-icons">mode_edit</i>
       </a>
@@ -169,9 +112,9 @@
         <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#"><i class="material-icons">attach_file</i></a></li>
         <li><a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#"><i class="material-icons">person</i></a></li>
       </ul>
-    </div>
+    </div> -->
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <?php include "file.php" ?>
+
 </body>
 </html>

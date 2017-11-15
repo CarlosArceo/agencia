@@ -15,11 +15,12 @@ form.sidebar-form {
 }
 
 div.page-announce {
-  min-height: 175px;
+  min-height: 152px;
   height: auto;
-  background-color: #f4425c;
-  padding: 40px;
+  background-color: #7981e4;
+  padding: 33px;
   margin-bottom: 10px;
+  font-style: italic;
 }
 
 h1.page-announce-text {
